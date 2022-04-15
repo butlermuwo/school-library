@@ -64,15 +64,16 @@ class Methods
     parent_permission = gets.chomp.downcase
 
     case parent_permission
-        when 'n'
-            student = Student.new(age, name)
-            puts 'Students doesnt have parent permission, cant rent a book'
-        when 'y'
-            student = Student.new(age, name)
-            @people << student
-            puts 
-            puts "Student, created successfully"
-        end
+    when 'n'
+      student = Student.new(age, name)
+      @people << student
+      puts 'Students doesnt have parent permission, cant rent a book'
+    when 'y'
+      student = Student.new(age, name)
+      @people << student
+      puts
+      puts 'Student, created successfully'
+    end
   end
 
   def create_teacher
