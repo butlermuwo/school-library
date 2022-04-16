@@ -27,9 +27,9 @@ class App
 
   loop do
     case home_page
-    when 1
-      method.list_books
     when 2
+      method.list_books
+    when 1
       method.list_people
     when 3
       method.create_person
